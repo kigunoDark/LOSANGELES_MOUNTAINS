@@ -18,10 +18,12 @@ const carouselData = [
   { id: 4, url: "/images/nature.png" },
 ];
 
+const slidesToShow = 3;
+
 function HistoryContent() {
-  const slidesToShow = 3;
+  
   return (
-    <div id="#team" className="history_content">
+    <div data-testId="history-content" id="#team" className="history_content">
       <div className="app_container">
         <div>
           <CustomTitle url={"/images/history_1.png"} />

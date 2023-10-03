@@ -35,6 +35,7 @@ const Carousel = ({ items, slidesToShow }) => {
         >
           {items.map((item) => (
             <img
+              alt={`Image ${item.id}`}
               key={item.id}
               src={item.url}
               className={`carousel-slide ${
@@ -47,11 +48,12 @@ const Carousel = ({ items, slidesToShow }) => {
         </div>
       </div>
       <div className="carousel-dots">
-        {items.map((_, index) => (
+        {items.map((item) => (
           <span
-            key={index}
-            className={`dot ${index === currentIndex ? "active" : ""}`}
-            onClick={() => goToSlide(index)}
+            key={item.id}
+            data-testId={`dot ${item.id}`}
+            className={`dot ${item.id === currentIndex ? "active" : ""}`}
+            onClick={() => goToSlide(item.id)}
           ></span>
         ))}
       </div>
