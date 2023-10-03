@@ -1,0 +1,42 @@
+.team_schedule {
+    background: #ffff;
+    width: 250px;
+    padding: 30px 50px;
+    opacity: 0.6;
+}
+
+.team_schedule_container {
+    display: block;
+    box-sizing: content-box;
+    padding-bottom: 50px;
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.team_schedule h2 {
+    color: #414f6b;
+    text-transform: uppercase;
+}
+
+.team_schedule_row {
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 16px;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .team_schedule {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .team_schedule h2 {
+        font-size: 14px;
+    }
+
+    .team_schedule_row {
+        font-size: 8px;
+    }
+}

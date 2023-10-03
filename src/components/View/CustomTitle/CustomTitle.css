@@ -1,0 +1,16 @@
+/* Default styles for larger screens */
+.custom_title {
+    background-size: cover;
+    width: 250px;
+    height: 150px;
+    margin-bottom: -10px;
+}
+
+
+@media (max-width: 768px) {
+    .custom_title {
+        width: 150px;
+        height: 100px;
+        margin-bottom: 0;
+    }
+}

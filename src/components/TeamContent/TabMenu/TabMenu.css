@@ -1,0 +1,44 @@
+.tab_menu {
+    background-color: #354259;
+    color: #b0b4be;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+    text-decoration-skip: ink;
+    text-underline-offset: 5px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.tab_menu div {
+    display: flex;
+}
+
+.tab_menu div span {
+    display: block;
+    padding: 20px;
+    text-decoration: underline;
+    text-decoration-skip: ink;
+    text-underline-offset: 5px;
+}
+
+.tab_menu .hovered {
+    background-color: #b0b4be;
+    color: #354259;
+}
+
+.tab_menu div span:hover {
+    background-color: #b0b4be;
+    color: #354259;
+}
+
+@media (max-width: 768px) {
+    .tab_menu {
+        font-size: 8px;
+    }
+
+    .tab_menu div span {
+        padding: 10px;
+    }
+}

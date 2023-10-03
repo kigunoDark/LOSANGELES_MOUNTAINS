@@ -1,0 +1,41 @@
+.history_content {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 30px 0px;
+    width: 100%;
+    height: 800px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%), url('../../../public/images/history_background.png');
+    filter: hue-rotate(20deg) saturate(1);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.history_content p {
+    text-align: justify;
+    font-size: 8px;
+}
+
+
+.carousel_content {
+    display: block;
+    padding: 20px 0px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 25%;
+    background-color: rgba(53, 66, 89, 0.5);
+    display: flex;
+    justify-content: center;
+}
+
+.carousel_content>div {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .history_content {
+        height: 500px;
+    }
+}

@@ -1,0 +1,18 @@
+.team_content {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -200px;
+    padding-top: 100px;
+    font-family: 'Lato', sans-serif;
+    transition: background-image 0.6s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .team_content {
+        height: auto;
+        background-position: center;
+        padding-top: 50px;
+    }
+}

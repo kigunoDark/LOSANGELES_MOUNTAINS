@@ -1,0 +1,28 @@
+.custom_page_delimiter {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.custom_page_delimiter p {
+    width: 60%;
+}
+
+@media (max-width: 768px) {
+    .custom_page_delimiter {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 30px 0px;
+        text-align: justify;
+    }
+
+    .custom_page_delimiter p {
+        margin-top: 20px;
+        width: 60%;
+        font-size: 8px;
+    }
+}
